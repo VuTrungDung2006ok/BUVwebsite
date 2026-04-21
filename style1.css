@@ -1,0 +1,47 @@
+body {
+    background: #111;
+    color: white;
+    font-family: Arial;
+    text-align: center;
+}
+
+nav {
+    display: block;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;              /* khoảng cách giữa button */
+    list-style: none;
+    padding: 2%;
+}
+
+nav ul li a {
+    background-color: #e63946;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+img {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+footer{
+    text-align: left;
+}
+section {
+    animation: fadeIn 1s;
+    border-radius: 40px;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

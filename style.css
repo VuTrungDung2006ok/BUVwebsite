@@ -1,0 +1,246 @@
+body {
+    background: linear-gradient(to right, #1a1a1a, #2a2a2a);
+    color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    padding: 2%;
+}
+header p {
+    color: bisque;
+}
+header p span {
+    color: yellow;
+    font-weight: bold;
+}
+nav {
+    display: block;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;              /* khoảng cách giữa button */
+    list-style: none;
+    padding: 2%;
+}
+
+nav ul li a {
+    background-color: #e63946;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 80px 40px;
+}
+
+/* TEXT */
+.about-text {
+    max-width: 500px;
+}
+
+/* TITLE */
+.about-text h2 {
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+/* PARAGRAPH */
+.about-text p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-top: 20px;
+    color: #ccc;
+}
+
+/* IMAGE */
+.about-img img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+}
+
+
+.activities {
+    padding: 80px 20px;
+}
+.activities h2 {
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+/* mỗi activity */
+.activity-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 60px;
+}
+
+/* text */
+.activity-text {
+    max-width: 400px;
+    font-size: 25px;
+}
+
+/* ảnh */
+.activity-img {
+    display: flex;
+    gap: 15px;
+}
+
+.activity-img img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.activity-text h3{
+    font-size: 50px;
+}
+
+.activity-row:nth-child(3) {
+    flex-direction: row-reverse;
+}
+
+.goals {
+    padding: 80px 20px;
+}
+
+.goals h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+.goals p {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.goals img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.goals ol,
+.goals ul {
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.8;
+    color: #ccc;
+    font-size: 25px;
+}
+
+
+/* qualification */
+.qualification-images {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.qualification-images img {
+    width: 420px;
+    border-radius: 8px;
+    height: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    table {
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+/*!CSS skill*/
+main section {
+    padding: 50px;
+    text-align: center;
+}
+
+main img {
+    width: 200px;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+main a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #e63946;
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .activity-row {
+        flex-direction: column;
+    }
+
+    .activity-img img {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+    .activity-text {
+        font-size: 18px;
+    }
+
+    .activity-text h3 {
+        font-size: 28px;
+    }
+
+    .goals ol,
+    .goals ul {
+        font-size: 18px;
+    }
+
+}
